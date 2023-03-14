@@ -1,11 +1,16 @@
 {
   "compilerOptions": {
-    "outDir": "./dist/",
+    "outDir": "./lib/",
+    "declaration": true,
+    "declarationMap": true,
     "noImplicitAny": true,
     "sourceMap": true,
     "module": "es6",
     "target": "es5",
     "allowJs": true,
     "moduleResolution": "node"
-  }
+  },
+  "files": [
+    "./src/JsonViewer.ts"
+  ],
 }
