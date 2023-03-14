@@ -24,7 +24,7 @@ const testJson: any = {
 };
 
 const jsonViewer = new JsonViewer({
-  container: document.getElementById('tt'),
+  container: document.getElementById('tt') as HTMLElement,
   theme: 'light',
   data: testJson,
   expand: true,
