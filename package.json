@@ -1,8 +1,9 @@
 {
   "name": "json-viewer-ts",
-  "version": "1.0.1",
+  "version": "1.0.4",
   "description": "One pretty json viewer by javascript. Extend from package [json-viewer-js]",
   "main": "./lib/JsonViewer.min.js",
+  "types": "./lib/JsonViewer.d.ts",
   "scripts": {
     "build": "webpack --mode=production",
     "start": "webpack-dev-server"

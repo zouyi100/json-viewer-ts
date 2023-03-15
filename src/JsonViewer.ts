@@ -29,7 +29,6 @@ export default class JsonViewer {
       throw new Error('Invalid JSON Format');
     }
 
-    debugger;
     this._render();
   }
 
