@@ -11,6 +11,7 @@ export default class JsonViewer {
     private data;
     private expand?;
     constructor(option: IJSONViewerOptions);
+    setData(data: any): void;
     private _render;
     private _createItem;
     private _toggleItem;
