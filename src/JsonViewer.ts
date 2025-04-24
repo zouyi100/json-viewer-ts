@@ -32,6 +32,17 @@ export default class JsonViewer {
     this._render();
   }
 
+  public setData(data: any) {
+    try {
+      this.data = JSON.parse(JSON.stringify(data));
+    } catch {
+      throw new Error('Invalid JSON Format');
+    }
+
+    this.container.innerHTML = '';
+    this._render();
+  }
+
   private _render() {
     this.container.classList.add(`jv-${this.theme}-con`);
     const type = this.data instanceof Array<any> ? 'Array' : 'Object';

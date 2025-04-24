@@ -29,3 +29,15 @@ const jsonViewer = new JsonViewer({
   data: testJson,
   expand: true,
 });
+
+function updateJsonObj() {
+  jsonViewer.setData({test: 1, good: 'morning'})
+}
+
+// Add this code to attach the event listener
+document.addEventListener('DOMContentLoaded', () => {
+  const updateButton = document.querySelector('button');
+  if (updateButton) {
+    updateButton.addEventListener('click', updateJsonObj);
+  }
+});
